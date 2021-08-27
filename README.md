@@ -1,4 +1,4 @@
-# <div style="text-align: center; height: 50px;">![ultima](public/UltimaWeapon.png)Ultima![ultima](public/UltimaWeapon.png)</div>
+# <div style="text-align: center;"><img src="public/UltimaWeapon.png" height="50px"/>Ultima!<img src="public/UltimaWeapon.png" height="50px" /></div>
 
 ### Why ultima-react?
 An excellent question! Ultima React is fundamentally a jest test organizer. It's a different approach to writing tests with the end goal being — write less code to achieve 100% test coverage for React Components.
