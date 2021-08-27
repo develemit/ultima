@@ -1,0 +1,41 @@
+{
+  "name": "ultima",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "description": "Jest testing, simplified",
+  "contributors": [
+    "Emit Dutcher <emitdutcher@gmail.com>"
+  ],
+  "scripts": {
+    "start": "",
+    "build": "npx babel src/ultima -d lib",
+    "prepare": "npm run build",
+    "test": "jest --coverage",
+    "watch:test": "jest --coverage --watchAll $1"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@babel/runtime": "^7.15.3",
+    "core-js": "^2.6.12",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "isomorphic-fetch": "^3.0.0",
+    "jest": "^27.0.6",
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-transform-react-jsx": "^7.14.9",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "amex-jest-preset-react": "^6.1.0",
+    "babel-eslint": "^10.1.0",
+    "babel-preset-amex": "^3.5.1",
+    "eslint": "^7.32.0",
+    "eslint-config-amex": "^14.2.1",
+    "react-dom": "^17.0.2"
+  }
+}

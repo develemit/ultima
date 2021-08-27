@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1628802184682" clover="3.2.0">
+  <project timestamp="1628802184682" name="All files">
+    <metrics statements="212" coveredstatements="173" conditionals="159" coveredconditionals="101" methods="38" coveredmethods="36" elements="409" coveredelements="310" complexity="0" loc="212" ncloc="212" packages="3" files="8" classes="8"/>
+    <package name="examples.App">
+      <metrics statements="12" coveredstatements="12" conditionals="6" coveredconditionals="5" methods="3" coveredmethods="3"/>
+      <file name="Index.jsx" path="/Users/emitdutcher/Desktop/ultima-test/src/examples/App/Index.jsx">
+        <metrics statements="12" coveredstatements="12" conditionals="6" coveredconditionals="5" methods="3" coveredmethods="3"/>
+        <line num="7" count="13" type="stmt"/>
+        <line num="8" count="13" type="stmt"/>
+        <line num="11" count="13" type="stmt"/>
+        <line num="12" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="11" type="cond" truecount="1" falsecount="1"/>
+        <line num="18" count="11" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="examples.Auth">
+      <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <file name="index.jsx" path="/Users/emitdutcher/Desktop/ultima-test/src/examples/Auth/index.jsx">
+        <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="10" count="3" type="cond" truecount="4" falsecount="0"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="17" count="6" type="stmt"/>
+        <line num="18" count="6" type="stmt"/>
+        <line num="19" count="6" type="stmt"/>
+        <line num="33" count="6" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="ultima">
+      <metrics statements="188" coveredstatements="149" conditionals="149" coveredconditionals="92" methods="33" coveredmethods="31"/>
+      <file name="MockDebug.js" path="/Users/emitdutcher/Desktop/ultima-test/src/ultima/MockDebug.js">
+        <metrics statements="12" coveredstatements="8" conditionals="8" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="cond" truecount="2" falsecount="2"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="15" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="16" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+      </file>
+      <file name="changeHelper.js" path="/Users/emitdutcher/Desktop/ultima-test/src/ultima/changeHelper.js">
+        <metrics statements="33" coveredstatements="25" conditionals="29" coveredconditionals="14" methods="4" coveredmethods="3"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="6" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
+        <line num="7" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="13" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="14" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="22" count="6" type="stmt"/>
+        <line num="23" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="24" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="25" count="6" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="40" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="44" count="6" type="stmt"/>
+        <line num="52" count="6" type="stmt"/>
+        <line num="53" count="6" type="cond" truecount="2" falsecount="2"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="58" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="59" count="6" type="stmt"/>
+        <line num="61" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="63" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="64" count="2" type="stmt"/>
+        <line num="65" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="66" count="4" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="82" count="6" type="stmt"/>
+      </file>
+      <file name="expectArray.js" path="/Users/emitdutcher/Desktop/ultima-test/src/ultima/expectArray.js">
+        <metrics statements="70" coveredstatements="52" conditionals="67" coveredconditionals="43" methods="7" coveredmethods="7"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="24" count="6" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="44" count="4" type="stmt"/>
+        <line num="45" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="46" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="56" count="4" type="stmt"/>
+        <line num="68" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="80" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="81" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="82" count="1" type="stmt"/>
+        <line num="83" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="91" count="0" type="stmt"/>
+        <line num="96" count="3" type="stmt"/>
+        <line num="98" count="3" type="stmt"/>
+        <line num="103" count="3" type="cond" truecount="3" falsecount="1"/>
+        <line num="104" count="3" type="stmt"/>
+        <line num="106" count="3" type="stmt"/>
+        <line num="108" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="109" count="0" type="stmt"/>
+        <line num="110" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="112" count="0" type="stmt"/>
+        <line num="117" count="0" type="stmt"/>
+        <line num="120" count="3" type="stmt"/>
+        <line num="121" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="122" count="0" type="stmt"/>
+        <line num="124" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="125" count="3" type="stmt"/>
+        <line num="128" count="0" type="stmt"/>
+        <line num="130" count="3" type="stmt"/>
+        <line num="134" count="1" type="stmt"/>
+        <line num="137" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="138" count="3" type="stmt"/>
+        <line num="139" count="3" type="stmt"/>
+        <line num="140" count="3" type="stmt"/>
+        <line num="141" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="142" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="143" count="0" type="stmt"/>
+        <line num="145" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="146" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="147" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="148" count="0" type="stmt"/>
+        <line num="151" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="152" count="0" type="stmt"/>
+        <line num="155" count="3" type="cond" truecount="3" falsecount="1"/>
+        <line num="156" count="3" type="stmt"/>
+        <line num="159" count="3" type="stmt"/>
+        <line num="161" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="162" count="0" type="stmt"/>
+        <line num="167" count="0" type="stmt"/>
+        <line num="169" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="170" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="175" count="2" type="stmt"/>
+        <line num="177" count="1" type="stmt"/>
+        <line num="180" count="0" type="stmt"/>
+        <line num="182" count="3" type="stmt"/>
+        <line num="184" count="3" type="stmt"/>
+        <line num="188" count="0" type="stmt"/>
+        <line num="190" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="191" count="0" type="stmt"/>
+        <line num="193" count="3" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/emitdutcher/Desktop/ultima-test/src/ultima/index.js">
+        <metrics statements="60" coveredstatements="54" conditionals="32" coveredconditionals="24" methods="19" coveredmethods="18"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="32" count="11" type="cond" truecount="1" falsecount="0"/>
+        <line num="33" count="11" type="cond" truecount="1" falsecount="0"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="37" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="48" count="2" type="stmt"/>
+        <line num="49" count="2" type="stmt"/>
+        <line num="50" count="4" type="stmt"/>
+        <line num="51" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="59" count="2" type="stmt"/>
+        <line num="60" count="2" type="stmt"/>
+        <line num="61" count="8" type="stmt"/>
+        <line num="69" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="76" count="8" type="stmt"/>
+        <line num="78" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="79" count="8" type="stmt"/>
+        <line num="80" count="11" type="stmt"/>
+        <line num="81" count="11" type="stmt"/>
+        <line num="83" count="0" type="stmt"/>
+        <line num="85" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="86" count="12" type="stmt"/>
+        <line num="89" count="8" type="stmt"/>
+        <line num="90" count="11" type="stmt"/>
+        <line num="91" count="11" type="stmt"/>
+        <line num="93" count="0" type="stmt"/>
+        <line num="96" count="8" type="stmt"/>
+        <line num="97" count="8" type="stmt"/>
+        <line num="98" count="8" type="stmt"/>
+        <line num="99" count="8" type="stmt"/>
+        <line num="100" count="8" type="stmt"/>
+        <line num="101" count="8" type="stmt"/>
+        <line num="102" count="8" type="stmt"/>
+        <line num="103" count="8" type="stmt"/>
+        <line num="104" count="8" type="stmt"/>
+        <line num="105" count="8" type="stmt"/>
+        <line num="106" count="8" type="stmt"/>
+        <line num="107" count="8" type="stmt"/>
+        <line num="108" count="8" type="stmt"/>
+        <line num="109" count="8" type="stmt"/>
+        <line num="111" count="8" type="stmt"/>
+        <line num="113" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="114" count="1" type="stmt"/>
+        <line num="122" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="123" count="3" type="stmt"/>
+        <line num="124" count="3" type="stmt"/>
+        <line num="145" count="3" type="stmt"/>
+        <line num="148" count="5" type="stmt"/>
+        <line num="149" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="150" count="5" type="stmt"/>
+        <line num="162" count="2" type="stmt"/>
+        <line num="164" count="0" type="stmt"/>
+        <line num="166" count="5" type="stmt"/>
+        <line num="169" count="8" type="stmt"/>
+        <line num="175" count="0" type="stmt"/>
+      </file>
+      <file name="noChange.js" path="/Users/emitdutcher/Desktop/ultima-test/src/ultima/noChange.js">
+        <metrics statements="12" coveredstatements="9" conditionals="13" coveredconditionals="7" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="15" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="17" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="19" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="31" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="32" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="35" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="36" count="0" type="stmt"/>
+      </file>
+      <file name="renderComp.jsx" path="/Users/emitdutcher/Desktop/ultima-test/src/ultima/renderComp.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="19" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

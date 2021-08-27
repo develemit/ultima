@@ -1,0 +1,36 @@
+{
+  "extends": "amex",
+  "env": {
+    "jest": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  },
+  "rules": {
+    "max-len": [1, 110],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "class-methods-use-this": 0,
+    "import/no-unresolved": 0,
+    "no-nested-ternary": 0,
+    "react/forbid-prop-types": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "import/extensions": 0,
+    "import/no-extraneous-dependencies": 0,
+    "react/jsx-props-no-spreading": 0,
+    "no-console": 0,
+    "no-unused-vars": [
+      2,
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "all",
+        "argsIgnorePattern": "^_"
+      }
+    ]
+  }
+}
