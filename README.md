@@ -1,4 +1,4 @@
-# <div style="text-align: center;"><img src="https://raw.githubusercontent.com/develemit/ultima/main/public/UltimaWeapon.png" height="50px"/>Ultima<img src="public/UltimaWeapon.png" height="50px" /></div>
+# <div style="text-align: center;"><img src="public/UltimaWeapon.png" height="50px"/>Ultima<img src="public/UltimaWeapon.png" height="50px" /></div>
 
 ### Why ultima?
 An excellent question! Ultima is fundamentally a jest test organizer. It's a different approach to writing tests with the end goal being — write less code to achieve 100% test coverage for React Components.
