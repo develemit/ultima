@@ -1,18 +1,18 @@
-# <div style="text-align: center;"><img src="public/UltimaWeapon.png" height="50px"/>Ultima!<img src="public/UltimaWeapon.png" height="50px" /></div>
+# <div style="text-align: center;"><img src="https://raw.githubusercontent.com/develemit/ultima/main/public/UltimaWeapon.png" height="50px"/>Ultima<img src="public/UltimaWeapon.png" height="50px" /></div>
 
-### Why ultima-react?
-An excellent question! Ultima React is fundamentally a jest test organizer. It's a different approach to writing tests with the end goal being — write less code to achieve 100% test coverage for React Components.
+### Why ultima?
+An excellent question! Ultima is fundamentally a jest test organizer. It's a different approach to writing tests with the end goal being — write less code to achieve 100% test coverage for React Components.
 
 <br>
 
 ### Getting Started:
 First things first, lets get it installed!
 
->`npm install --save-dev ultima-react`
+>`npm install --save-dev @develemit/ultima`
 
-Next up! We'll need to import `ultima-react` into your .spec.js
+Next up! We'll need to import `@develemit/ultima` into your .spec.js
 
->`import Ultima from ultima-react';`
+>`import Ultima from @develemit/ultima';`
 
 Ultima is a constructor function which takes a config object to personalize the returned `ultima` function for your test file.
 
@@ -153,7 +153,7 @@ There are many examples for reference inside of the `examples/` folder to see di
   <summary>Example using <code>simulate</code></summary>
   
 ```js
-import Ultima from 'ultima-react';
+import Ultima from '@develemit/ultima';
 import { Button } from 'axp-base';
 import RemoveBandModal from './RemoveBandModal';
 
@@ -222,7 +222,7 @@ ultima(tests);
   <summary>Example using <code>values</code></summary>
 
 ```js
-import Ultima from 'ultima-react';
+import Ultima from '@develemit/ultima';
 import Authentication from '.';
 
 const successCallBack = jest.fn();
@@ -266,10 +266,9 @@ ultima(tests);
 
 ```js
 import React, { useState } from 'react';
-import Ultima from 'ultima-react';
+import Ultima from '@develemit/ultima';
 import BandWearables from '.';
 import BandItem from './BandItem';
-import AuthN from '../AuthN';
 import { resetAction } from './ActionApiCalls';
 
 let mockUseEffectDependencyArray = '';
@@ -442,7 +441,7 @@ ultima(tests);
   <summary>Example using <code>Context</code></summary>
 
 ```js
-import Ultima from 'ultima-react';
+import Ultima from '@develemit/ultima';
 import { useStore } from 'hooks/useStore'; // Be Sure to import your hook to get your context values
 import App from '.';
 
@@ -514,7 +513,7 @@ any Open Source Project managed by the American Express Open Source Community mu
 an Agreement indicating agreement to the terms below. Except for the rights granted in this 
 Agreement to American Express and to recipients of software distributed by American Express, You
 reserve all right, title, and interest, if any, in and to Your Contributions. Please
-[fill out the Agreement](https://cla-assistant.io/americanexpress/ultima-react).
+[fill out the Agreement](https://cla-assistant.io/americanexpress/@develemit/ultima).
 
 ## License
 
