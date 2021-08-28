@@ -89,7 +89,7 @@ const expectArray = (args, Component) => {
                 || (changeExpected && !Array.isArray(changeExpected))
               ) {
                 throw new Error(
-                  'Ultima-React: If you are using "values" in your changes,',
+                  'Ultima: If you are using "values" in your changes,',
                   'you need to provide an array for "expectParam/expected" and "expectFunc" if applicable.'
                 );
               }

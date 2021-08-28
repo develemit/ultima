@@ -58,7 +58,7 @@ const changeHelper = ({
     if (at >= 0) compProps = comp.at(at).props();
     else compProps = comp.props();
 
-    if (!compProps) throw new Error('Ultima-React: Unable to find Component!');
+    if (!compProps) throw new Error('Ultima: Unable to find Component!');
 
     if (Array.isArray(value)) {
       compProps[event](...value);

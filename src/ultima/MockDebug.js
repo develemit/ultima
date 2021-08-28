@@ -9,7 +9,7 @@ const MockDebug = ({
     mock();
   } else {
     console.log(
-      `Ultima-React: "mock" function not present, skipping for test "${title}"`
+      `Ultima: "mock" function not present, skipping for test "${title}"`
     );
   }
   if (setContext) {
@@ -17,7 +17,7 @@ const MockDebug = ({
       console.log(`${title} -Context values -`, setContext());
     } else {
       console.error(
-        `Ultima-React: please ensure "setContext" is a function for test ${title}`
+        `Ultima: please ensure "setContext" is a function for test ${title}`
       );
     }
   }
