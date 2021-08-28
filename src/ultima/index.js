@@ -51,7 +51,7 @@ function Ultima(ultimaConfig = {}) {
           return useState.mockImplementationOnce(() => [key, val || jest.fn()]);
         } catch (e) {
           return console.error(
-            'Ultima-React: "useState" appears to not be mocked. Please mock "useState" and include it as a key in the \'ultimaConfig\' argument of "Ulitma".'
+            'Ultima: "useState" appears to not be mocked. Please mock "useState" and include it as a key in the \'ultimaConfig\' argument of "Ulitma".'
           );
         }
       });
@@ -80,7 +80,7 @@ function Ultima(ultimaConfig = {}) {
               try {
                 userBeforeEach();
               } catch (e) {
-                console.error('Ultima-React: beforeEach error ->', e);
+                console.error('Ultima: beforeEach error ->', e);
               }
               if (setContext) {
                 setContext.mockImplementation(() => mockContextValues);
@@ -90,7 +90,7 @@ function Ultima(ultimaConfig = {}) {
               try {
                 userAfterEach();
               } catch (e) {
-                console.error('Ultima-React: afterEach error ->', e);
+                console.error('Ultima: afterEach error ->', e);
               }
             });
             const CleanComp = Component;

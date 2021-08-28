@@ -120,7 +120,7 @@
 <span class="cstat-no" title="statement not covered" >    mock();</span>
   } else {
     console.log(
-      `Ultima-React: "mock" function not present, skipping for test "${title}"`
+      `Ultima: "mock" function not present, skipping for test "${title}"`
     );
   }
   <span class="missing-if-branch" title="else path not taken" >E</span>if (setContext) {
@@ -128,7 +128,7 @@
       console.log(`${title} -Context values -`, setContext());
     } else {
 <span class="cstat-no" title="statement not covered" >      console.error(</span>
-        `Ultima-React: please ensure "setContext" is a function for test ${title}`
+        `Ultima: please ensure "setContext" is a function for test ${title}`
       );
     }
   }

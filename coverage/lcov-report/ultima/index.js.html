@@ -468,7 +468,7 @@ function Ultima(ultimaConfig = <span class="branch-0 cbranch-no" title="branch n
           return useState.mockImplementationOnce(() =&gt; [key, val || <span class="branch-1 cbranch-no" title="branch not covered" >jest.fn()]</span>);
         } catch (e) {
 <span class="cstat-no" title="statement not covered" >          return console.error(</span>
-            'Ultima-React: "useState" appears to not be mocked. Please mock "useState" and include it as a key in the \'ultimaConfig\' argument of "Ulitma".'
+            'Ultima: "useState" appears to not be mocked. Please mock "useState" and include it as a key in the \'ultimaConfig\' argument of "Ulitma".'
           );
         }
       });
@@ -497,7 +497,7 @@ function Ultima(ultimaConfig = <span class="branch-0 cbranch-no" title="branch n
               try {
                 userBeforeEach();
               } catch (e) {
-<span class="cstat-no" title="statement not covered" >                console.error('Ultima-React: beforeEach error -&gt;', e);</span>
+<span class="cstat-no" title="statement not covered" >                console.error('Ultima: beforeEach error -&gt;', e);</span>
               }
               if (setContext) {
                 setContext.mockImplementation(() =&gt; mockContextValues);
@@ -507,7 +507,7 @@ function Ultima(ultimaConfig = <span class="branch-0 cbranch-no" title="branch n
               try {
                 userAfterEach();
               } catch (e) {
-<span class="cstat-no" title="statement not covered" >                console.error('Ultima-React: afterEach error -&gt;', e);</span>
+<span class="cstat-no" title="statement not covered" >                console.error('Ultima: afterEach error -&gt;', e);</span>
               }
             });
             const CleanComp = Component;

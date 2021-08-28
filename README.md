@@ -321,12 +321,8 @@ const defaultProps = {
   setBandSelected: jest.fn(),
   setMessage: jest.fn(),
   setView: jest.fn(),
-  updateApiCallOne: jest.fn(() => ({
-    promise: Promise.resolve([{}]),
-  })),
-  updateApiCallTwo: jest.fn(() => ({
-    promise: Promise.resolve({ status: 200, body: {} }),
-  })),
+  updateApiCallOne: jest.fn(() => Promise.resolve([{}])),
+  updateApiCallTwo: jest.fn(() => Promise.resolve({ status: 200, body: {} })),
 };
 
 const { ultima } = new Ultima({
@@ -414,14 +410,12 @@ const tests = [
       bands: [
         {
           tokenId: 'string',
-          accountToken: 'HPLKTU2AM8SICIT',
           validThru: '202403',
           actions,
           status: 'INACTIVE',
         },
         {
           tokenId: 'string',
-          accountToken: 'GGJKTU2AM8SICIT',
           validThru: '202403',
           actions,
           status: 'ACTIVE',
@@ -505,22 +499,3 @@ ultima(tests);
 
 #### Beyond React Component Testing
 For future releases, I would like to expand Ultima React further with an option for redux testing.
-
-## Contributing
-
-We welcome Your interest in the American Express Open Source Community on Github. Any Contributor to
-any Open Source Project managed by the American Express Open Source Community must accept and sign
-an Agreement indicating agreement to the terms below. Except for the rights granted in this 
-Agreement to American Express and to recipients of software distributed by American Express, You
-reserve all right, title, and interest, if any, in and to Your Contributions. Please
-[fill out the Agreement](https://cla-assistant.io/americanexpress/@develemit/ultima).
-
-## License
-
-Any contributions made under this project will be governed by the
-[Apache License 2.0](./LICENSE.txt).
-
-## Code of Conduct
-
-This project adheres to the [American Express Community Guidelines](./CODE_OF_CONDUCT.md). By
-participating, you are expected to honor these guidelines.
