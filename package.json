@@ -1,5 +1,5 @@
 {
-  "name": "ultima",
+  "name": "@develemit/ultima",
   "version": "0.0.1",
   "main": "lib/index.js",
   "description": "Jest testing, simplified",
@@ -37,5 +37,29 @@
     "eslint": "^7.32.0",
     "eslint-config-amex": "^14.2.1",
     "react-dom": "^17.0.2"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/develemit/ultima.git"
+  },
+  "keywords": [
+    "jest",
+    "enzyme",
+    "testing",
+    "react",
+    "hooks",
+    "context"
+  ],
+  "author": "Emit Dutcher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/develemit/ultima/issues"
+  },
+  "homepage": "https://github.com/develemit/ultima#readme",
+  "publishConfig": {
+    "access": "public"
   }
 }

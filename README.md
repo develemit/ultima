@@ -167,11 +167,8 @@ const defaultProps = {
   setMessage,
   setShowRemoveModal,
   updateBand,
-  updatePaymentDeviceStatus: jest.fn(() => ({
-    promise: Promise.resolve([
-      { account_token: 'aa11', status: true },
-    ]),
-  })),
+  updateBandCall: jest.fn(),
+  },
 };
 
 const { ultima } = new Ultima({
@@ -188,11 +185,7 @@ const tests = [
       {
         title: 'remove_modal_submit false',
         props: {
-          updatePaymentDeviceStatus: jest.fn(() => ({
-            promise: Promise.resolve([
-              { account_token: 'aa11', status: false },
-            ]),
-          })),
+          updateBandCall: jest.fn(() => 'banding!'),
         },
         at: 0,
         simulate: ['click'],
@@ -230,30 +223,26 @@ ultima(tests);
 
 ```js
 import Ultima from 'ultima-react';
-import AuthN from '.';
+import Authentication from '.';
 
 const successCallBack = jest.fn();
 const failureCallBack = jest.fn();
 
 const defaultProps = {
-  actionId: '',
+  id: '',
   successCallBack,
   failureCallBack,
-  selectedProduct: 'aa11',
   locale: '',
-  AuthAction: () => null,
-  productsList: { aa11: { account: {}, product: { description: '' } } },
 };
 
 const { ultima } = new Ultima({
-  Component: AuthN,
+  Component: Authentication,
   defaultProps,
 });
 
 const tests = [
   {
     title: 'successCallBack',
-    find: 'AuthAction',
     changes: [
       {
         title: 'status',
@@ -281,7 +270,7 @@ import Ultima from 'ultima-react';
 import BandWearables from '.';
 import BandItem from './BandItem';
 import AuthN from '../AuthN';
-import { resetSpending } from './ActionApiCalls';
+import { resetAction } from './ActionApiCalls';
 
 let mockUseEffectDependencyArray = '';
 
@@ -299,14 +288,13 @@ jest.mock('react', () => ({
 
 jest.mock('./ActionApiCalls', () => ({
   ...jest.requireActual('./ActionApiCalls'),
-  resetSpending: jest.fn(),
+  resetAction: jest.fn(),
 }));
 
 const actions = ['RESET', 'ACTIVATE', 'SUSPEND', 'RESUME', 'REMOVE'];
 const bands = [
   {
     tokenId: 'string',
-    accountToken: 'HPLKTU2AM8SICIT',
     validThru: '202403',
     actions,
     status: {
@@ -316,7 +304,6 @@ const bands = [
   },
   {
     tokenId: 'string',
-    accountToken: 'GGJKTU2AM8SICIT',
     validThru: '202403',
     actions,
     status: {
@@ -330,20 +317,16 @@ const defaultProps = {
   message: 'New Message',
   bands,
   bandSelected: false,
-  AuthAction: jest.fn(),
   locale: 'en-US',
-  langPack: { links: { gem: '' } },
-  productsList: {},
-  selectedProduct: {},
   setBands: jest.fn(),
   setBandSelected: jest.fn(),
   setMessage: jest.fn(),
   setView: jest.fn(),
-  updateAccountDevicePaymentDirective: jest.fn(() => ({
-    promise: Promise.resolve([{ account_token: 'GBYBHH1WDCVOHQG', status: 'SUCCESS' }]),
+  updateApiCallOne: jest.fn(() => ({
+    promise: Promise.resolve([{}]),
   })),
-  updatePaymentDeviceStatus: jest.fn(() => ({
-    promise: Promise.resolve({ status: 200, body: { account_token: 'GBYBHH1WDCVOHQG', status: true, actions } }),
+  updateApiCallTwo: jest.fn(() => ({
+    promise: Promise.resolve({ status: 200, body: {} }),
   })),
 };
 
@@ -378,7 +361,7 @@ const tests = [
   {
     title: 'Reset - Error',
     find: BandItem,
-    props: { updateAccountDevicePaymentDirective: undefined },
+    props: { updateApiCallOne: undefined },
     render: ({ comp }) => {
       const { actionsFunctions } = comp.at(0).props();
       jest.spyOn(actionsFunctions, 'RESET');
@@ -390,8 +373,8 @@ const tests = [
     title: 'Reset - Failure',
     find: BandItem,
     props: {
-      updateAccountDevicePaymentDirective: jest.fn(() => ({
-        promise: Promise.resolve([{ account_token: 'GBYBHH1WDCVOHQG', status: 'FAILURE' }]),
+      updateApiCallOne: jest.fn(() => ({
+        promise: Promise.resolve([{}]),
       })),
     },
     render: ({ comp }) => {
@@ -404,7 +387,7 @@ const tests = [
   {
     title: 'Suspend - Error',
     find: BandItem,
-    props: { updatePaymentDeviceStatus: undefined },
+    props: { updateApiCallTwo: undefined },
     render: ({ comp }) => {
       const { actionsFunctions } = comp.at(0).props();
       jest.spyOn(actionsFunctions, 'SUSPEND');
@@ -416,9 +399,7 @@ const tests = [
     title: 'Suspend - Failure',
     find: BandItem,
     props: {
-      updatePaymentDeviceStatus: jest.fn(() => ({
-        promise: Promise.resolve({ account_token: 'GBYBHH1WDCVOHQG', status: false }),
-      })),
+      updateApiCallTwo: jest.fn(),
       message: 'SUSPEND_FAILURE',
     },
     render: ({ comp }) => {
