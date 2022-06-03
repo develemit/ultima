@@ -29,10 +29,18 @@ const noChange = (args) => {
   //   return undefined;
   // }
   if ('expected' in args) {
-    expect(expectParam || comp)[expectFunc](args.expected);
-    return undefined;
+    if (
+      typeof args.expected === 'object'
+      && 'args' in args.expected
+      && args.expected.args.length > 0
+    ) {
+      expect(expectParam || comp)[expectFunc](...args.expected.args);
+    } else {
+      expect(expectParam || comp)[expectFunc](args.expected);
+    }
+  } else {
+    expect(expectParam || comp)[expectFunc]();
   }
-  expect(expectParam || comp)[expectFunc]();
   return undefined;
 };
 
